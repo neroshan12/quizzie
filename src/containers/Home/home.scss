@@ -1,0 +1,18 @@
+.content-holder {
+  width: 25rem;
+  border: 1px solid red;
+  margin: 1rem;
+}
+
+.category-header {
+  width: 25rem;
+  border: 1px solid pink;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card-holder {
+  display: flex;
+  flex-direction: row;
+}
