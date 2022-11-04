@@ -1,12 +1,14 @@
 import React from 'react'
 import Card from '../../components/Card'
 
+import mappingFile from '../../mappingFile'
+
 import './home.scss'
 
 const Home = () => {
   return (
     <div>
-      <h1>Welcome to Quizzie</h1>
+      <h1>Welcome to Quizzie!</h1>
       <div className="content-holder">
         <div>
           <div className="category-header">
@@ -15,9 +17,9 @@ const Home = () => {
           </div>
         </div>
         <div className="card-holder">
-          <Card />
-          <Card />
-          <Card />
+          {mappingFile.map(item => {
+            return <Card path="quiz" data={item} />
+          })}
         </div>
       </div>
 
@@ -29,9 +31,9 @@ const Home = () => {
           </div>
         </div>
         <div className="card-holder">
-          <Card />
-          <Card />
-          <Card />
+          {mappingFile.map(item => {
+            return <Card path="learn" data={item} />
+          })}
         </div>
       </div>
     </div>

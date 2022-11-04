@@ -1,11 +1,12 @@
 import React from 'react'
 import './card.scss'
 
-const Card = () => {
+const Card = ({ data }) => {
+  console.log(data)
   return (
     <div className="card">
       <div>Icon</div>
-      <div>Name</div>
+      <div>{data?.name}</div>
     </div>
   )
 }
