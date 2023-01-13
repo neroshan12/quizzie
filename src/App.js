@@ -3,7 +3,7 @@ import Home from './containers/Home'
 import Quiz from './components/Quiz'
 import Learn from './components/Learn'
 
-import './App.css'
+import './App.scss'
 
 function App() {
   return (
