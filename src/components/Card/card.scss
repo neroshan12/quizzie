@@ -2,6 +2,24 @@
   height: 8rem;
   width: 10rem;
   display: flex;
+  flex-direction: row;
+  background-color: #ff00f5;
+  margin: 0.2rem;
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+
+.card-icon {
+  height: 3rem;
+  width: 3rem;
+}
+
+.card-name {
+  vertical-align: bottom;
+}
+
+.card-name-holder {
+  display: flex;
   flex-direction: column;
-  border: 1px solid green;
+  justify-content: flex-end;
 }

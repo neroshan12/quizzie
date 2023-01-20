@@ -5,6 +5,7 @@ const mappingFile = {
     path: {
       quiz: {
         description: 'Which country does this flag belong to?',
+        icon: 'flags-alt.png',
       },
       learn: {
         description: '...is the national flag of...',
@@ -17,6 +18,7 @@ const mappingFile = {
     path: {
       quiz: {
         description: 'What currency or currencies are used in the following country?',
+        icon: 'currencies-alt.png',
       },
       learn: {
         description: '...uses the following currency or currencies....',
@@ -29,6 +31,7 @@ const mappingFile = {
     path: {
       quiz: {
         description: 'What is the capital of the following country?',
+        icon: 'capitals-alt.png',
       },
       learn: {
         description: '...is the capital of...',
@@ -41,6 +44,7 @@ const mappingFile = {
     path: {
       quiz: {
         description: 'What language(s) do they speak in the following country?',
+        icon: 'languages-alt.png',
       },
       learn: {
         description: '...is/are spoken in...',
@@ -53,6 +57,7 @@ const mappingFile = {
     path: {
       quiz: {
         description: 'What continent is the following country in?',
+        icon: 'continents-alt.png',
       },
       learn: {
         description: '...is in the following continent...',

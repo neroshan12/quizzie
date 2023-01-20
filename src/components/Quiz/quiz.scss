@@ -1,9 +1,46 @@
 .quiz-container {
   width: 25rem;
   border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
 }
 
 .quiz-description {
   padding: 2rem;
-  border: 1px solid pink;
+  border: 1px solid #ff00f5;
+}
+
+.emoji {
+  font-size: 120px;
+  margin: 5rem;
+}
+
+.submit-holder {
+  display: flex;
+  flex-direction: column;
+  width: 15rem;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  border: 1px solid #ff00f5;
+}
+
+.quiz-input {
+  margin-bottom: 1rem;
+  height: 3rem;
+  font-size: 2rem;
+}
+
+.quiz-submit {
+  height: 2rem;
+  background-color: #ff00f5;
+  border-radius: 2px;
+  color: white;
+  border: none;
+}
+
+.quiz-icon {
+  color: #ff00f5;
+  margin-bottom: 2rem;
 }

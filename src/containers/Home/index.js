@@ -42,11 +42,10 @@ const Home = () => {
   const changeTab = page => {
     setCurrentPage(page.type)
     setSubject(page.subject)
-    console.log(currentPage)
   }
 
   return (
-    <div>
+    <div className="app-parent">
       {currentPage === 'home' && (
         <>
           <h1>Welcome to Quizzie!</h1>
