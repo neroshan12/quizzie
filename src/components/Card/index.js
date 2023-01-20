@@ -1,11 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './card.scss'
 
-const Card = ({ data }) => {
+const Card = ({ id, data, changeTab }) => {
   return (
-    <div className="card">
-      <div>Icon</div>
-      <div>{data?.name}</div>
+    <div onClick={changeTab} key={id} className="card">
+      {data?.name}
+      <img src={require(`../../images/${data.icon}`)}></img>
     </div>
   )
 }

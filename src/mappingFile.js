@@ -1,6 +1,6 @@
-const mappingFile = [
-  {
-    name: 'Flags',
+const mappingFile = {
+  flags: {
+    name: 'flags',
     icon: 'flags.png',
     path: {
       quiz: {
@@ -11,8 +11,8 @@ const mappingFile = [
       },
     },
   },
-  {
-    name: 'Currencies',
+  currencies: {
+    name: 'currencies',
     icon: 'currencies.png',
     path: {
       quiz: {
@@ -23,8 +23,8 @@ const mappingFile = [
       },
     },
   },
-  {
-    name: 'Capitals',
+  capitals: {
+    name: 'capitals',
     icon: 'capitals.png',
     path: {
       quiz: {
@@ -35,8 +35,8 @@ const mappingFile = [
       },
     },
   },
-  {
-    name: 'Languages',
+  languages: {
+    name: 'languages',
     icon: 'languages.png',
     path: {
       quiz: {
@@ -47,8 +47,8 @@ const mappingFile = [
       },
     },
   },
-  {
-    name: 'Continents',
+  continents: {
+    name: 'continents',
     icon: 'continents.png',
     path: {
       quiz: {
@@ -59,6 +59,6 @@ const mappingFile = [
       },
     },
   },
-]
+}
 
 export default mappingFile

@@ -3,17 +3,26 @@ import Home from './containers/Home'
 import Quiz from './components/Quiz'
 import Learn from './components/Learn'
 
+import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client'
+
 import './App.scss'
 
-function App() {
+const client = new ApolloClient({
+  uri: 'https://countries.trevorblades.com/',
+  cache: new InMemoryCache(),
+})
+
+const App = () => {
   return (
-    <div className="App">
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/quiz" element={<Quiz />} />
-        <Route path="/learn" element={<Learn />} />
-      </Routes>
-    </div>
+    <ApolloProvider client={client}>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/quiz/:subject" element={<Quiz />} />
+          <Route path="/learn:/:subject" element={<Learn />} />
+        </Routes>
+      </div>
+    </ApolloProvider>
   )
 }
 
